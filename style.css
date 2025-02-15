@@ -183,7 +183,7 @@ nav.sticky .menu-btn {
   font-size: 25px;
   font-weight: 400;
   background: #4070f4;
-  color: #fff;
+  color: #ffffff;
   cursor: pointer;
   border: 2px solid transparent;
   transition: all 0.4s ease;
@@ -277,7 +277,7 @@ section .topic {
 }
 section .contact, section .contact-section{
   color: #0E2431;
-  font-size: 19px;
+  font-size: 15px;
   margin-bottom: 10px;
   font-style:italic Ariel;
 }
@@ -298,17 +298,26 @@ section .button button {
   border-radius: 4px;
   font-size: 25px;
   font-weight: 400;
-  background: #4070f4;
-  color: #fff;
+  background: #0096FF;
   border: 2px solid transparent;
   cursor: pointer;
   transition: all 0.4s ease;
+  text-decoration: None;
+  color: #ffffff;
 }
 
 section .button button:hover {
-  border-color: #4070f4;
-  background-color: #fff;
-  color: #4070f4;
+  border-color: #0047AB;
+  background: #0096FF;
+  color: #000000;
+}
+
+section .button button a {
+    color: #ffffff;
+}
+
+section .button button a:hover {
+    color:#000000;
 }
 
 /* My Skills CSS */
@@ -429,7 +438,7 @@ section .button button:hover {
 }
 
 /* Contact Me CSS */
-.contact {
+section .contact {
   background: #F0F8FF;
 }
 
@@ -617,8 +626,8 @@ footer .text span a:hover {
 /* Educational details */
 .timeline-container {
   position: relative;
-  width: 90%;
-  max-width: 1000px;
+  width: 100%;
+  max-width: 1200px;
   padding: 20px 0;
 }
 
@@ -655,15 +664,20 @@ footer .text span a:hover {
   }
 }
 
-.education-step:hover {
+.education-step:hover,
+.education-step left,
+.education-step right{
   transform: scale(1.05);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  background-color:#89CFF0;
+  color:#ffffff;
 }
 
 .education-step h2 {
   margin-top: 0;
   color: #0096FF;
 }
+
 
 .education-item {
   margin-bottom: 10px;
@@ -706,9 +720,9 @@ footer .text span a:hover {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .timeline-container::before {
-      left: 20px;
+      left: 30px;
   }
 
   .education-step {
@@ -719,7 +733,7 @@ footer .text span a:hover {
   }
 
   .education-step::before {
-      left: -20px;
+      left: -30px;
   }
 }
 
@@ -769,19 +783,17 @@ footer .text span a:hover {
   border-radius: 4px;
 }
 
-.contact-form button {
-  background-color: #0000FF		;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 4px;
-  cursor: pointer;
+
+section .icon i {
+    margin-bottom:-5px;
+    margin: 0 auto;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
-.contact-form button:hover {
-  background-color: #45a049;
-}
-
-.contact-item ul{
-  list-style-type: none;
+section .timeline-container {
+    justify-content: center;
+    align-items:center;
 }
