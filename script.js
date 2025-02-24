@@ -47,7 +47,7 @@ navLinks.forEach((link) => {
 
 
 // Contact Form
-function sendEmail() {
+function SendMessage() {
   var name = document.getElementById('name').value;
   var email = document.getElementById('email').value;
   var message = document.getElementById('message').value;

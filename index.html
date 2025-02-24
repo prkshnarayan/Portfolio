@@ -2,13 +2,14 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <title>Jaya Prakash</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <link rel="icon" href="icon.jpg" type="image/icon type"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 </head>
 
 <body>
@@ -16,7 +17,7 @@
   <nav>
     <div class="navbar">
       <div class="logo"><a href="#">Portfolio</a></div>
-      <ul class="menu">
+      <ul class="menu" class="col-md-2 col-sm-2 col-xs-1">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#education">Education</a></li>
@@ -76,10 +77,14 @@
     </div>
   </section>
 
+  <!-- Education Section Start -->
 
-  <section class="services" id="education">
+
+  <section class="education" id="education">
     <div class="content">
       <div class="title"><span>Education</span></div>
+
+
       <div class="timeline-container">
         <div class="education-step left">
             <h2>High School</h2>
@@ -142,6 +147,8 @@
           </div>
         </div>
     </div>
+
+
     </div>
   </section>
 
@@ -153,7 +160,7 @@
     <div class="content">
       <div class="title"><span>My Skills</span></div>
       <div class="skills-details">
-        <div class="text">
+        <div class="text" class="col-md-6 col-sm-6 col-xs-12">
           <div class="topic">Skills Reflects Our Knowledge</div>
           <p>
             I have a solid full-stack development skill set, with expertise in Python, Django and Flask 
@@ -169,7 +176,7 @@
             </div>
           </div>
         </div>
-        <div class="boxes">
+        <div class="boxes" class="col-md-6 col-sm-6 col-xs-12">
           <div class="box">
             <div class="topic">PYTHON</div>
             <div class="per">80%</div>
@@ -196,10 +203,9 @@
           </div>
         </div>
       </div>
-    </div>
     <div>
       <div align="center" class="title"><span>Languages and Tools used</span></div>
-      <div>
+      <div class="col-md-12 col-sm-12 col-xs-12">
         <p align="center"> 
           <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="100" height="100"/> </a> 
           <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="100" height="100"/> </a>
@@ -218,8 +224,8 @@
 
 
 
-
-  <!-- My Services Section Start -->
+<!-- 
+  My Services Section Start
   <section class="services" id="projects">
     <div class="content">
       <div class="title"><span>Projects</span></div>
@@ -275,7 +281,7 @@
       </div>
     </div>
   </section>
-
+ -->
 
 
   <!-- Contact Me section Start -->
@@ -305,16 +311,21 @@
           <div class="contact-item">
               <span>Social Media:</span><br>
                   <div class="icon">
-                      <span><i class="fa fa-linkedin-square" style="font-size:36px"></i></span> <a  href="https://www.linkedin.com/in/bommisetty-jaya-prakash-2577b8225/" target="_blank">LinkedIn</a>
+                       <a  href="https://www.linkedin.com/in/bommisetty-jaya-prakash-2577b8225/" target="_blank"><span><i class="fa fa-linkedin-square" style="font-size:36px"></i></span></a>
                   </div>
                   <div class="icon">
-                      <span><i class="fa fa-github" style="font-size:36px"></i></span> <a href="https://github.com/prkshnarayan" target="_blank">Github</a>
+                       <a href="https://github.com/prkshnarayan" target="_blank"><span><i class="fa fa-github" style="font-size:36px"></i></span></a>
                   </div>
                   <div class="icon">
-                      <span><i class="fa fa-twitter-square" style="font-size:36px"></i></span> <a href="https://x.com/JayaPrakash35" target="_blank">Twitter</a>
+                      <a href="https://x.com/JayaPrakash35" target="_blank"><span><i class="fa fa-twitter-square" style="font-size:36px"></i></span> </a>
                   </div>
+                  <div class="icon">
+                     <a href="https://api.whatsapp.com/send/?phone=918897704032" target="_blank"><span><i class="fa fa-whatsapp" style="font-size:30px"></i></span></a>
+                </div>
           </div>
       </div>
+
+
 
     <!-- Contact Form Section -->
         <div class="contact-section">
@@ -333,22 +344,20 @@
                     <textarea id="message" name="message" rows="5" required></textarea>
                 </div>
                 <div class="button">
-                    <button class="title" type="submit">Send Message</button>
+                    <button class="title" type="submit"><a href="mailto:jayaprakashbommisetty2580@gmail.com?subject=Hello%20There">SendMessage</a> </button>
                 </div>
             </form>
         </div>
+        
     </div>
   </section>
 
-  <!-- Back to Top Button -->
-    <button onclick="topFunction()" id="myBtn" title="Go to top">
-      <i class="fas fa-arrow-up"></i>
-    </button>
+
 
   <!-- Footer Section Start -->
   <footer>
     <div class="text">
-      <span>Created By <a href="#">Jaya Prakash</a> | 2025 </span>
+      <span>Created By <a href="https://github.com/prkshnarayan">Jaya Prakash</a> | 2025 </span>
     </div>
   </footer>
 

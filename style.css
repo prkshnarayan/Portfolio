@@ -199,7 +199,7 @@ nav.sticky .menu-btn {
 /* Those Elements Where We Have Apply Same CSS,
  I'm Selecting Directly 'Section Tag' and 'Class'  */
 section {
-  padding-top: 40px;
+  padding-top: 30px;
 }
 
 section .content {
@@ -255,7 +255,7 @@ section .title span::after {
 }
 
 .about .about-details .left {
-  width: 45%;
+  width: 35%;
 }
 
 .about .left img {
@@ -266,7 +266,7 @@ section .title span::after {
 }
 
 .about-details .right {
-  width: 55%;
+  width: 65%;
 }
 
 section .topic {
@@ -288,8 +288,10 @@ section .contact, section .contact-section{
   color: #0E2431;
 }
 
+
 section .button {
   margin: 16px 0;
+  text-decoration: None;
 }
 
 section .button button {
@@ -302,7 +304,6 @@ section .button button {
   border: 2px solid transparent;
   cursor: pointer;
   transition: all 0.4s ease;
-  text-decoration: None;
   color: #ffffff;
 }
 
@@ -326,7 +327,7 @@ section .button button a:hover {
 }
 
 .skills .content {
-  padding: 40px 0;
+  padding: 50px 0;
 }
 
 .skills .skills-details {
@@ -368,6 +369,21 @@ section .button button a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.skills-details .text {
+  width: 45%;
+}
+
+.skills-details .boxes .topic {
+  width:50%;
+  font-size: 20px;
+  color: #4070f4;
+}
+
+.skills-details .boxes .per {
+  font-size: 60px;
+  color: #4070f4;
 }
 
 .skills-details .box {
@@ -484,7 +500,6 @@ footer .text span a:hover {
   color: #fff;
   background: #4070f4;
   padding: 7px 12px;
-  ;
   font-size: 18px;
   border-radius: 6px;
   box-shadow: rgba(0, 0, 0, 0.15);
@@ -624,12 +639,35 @@ footer .text span a:hover {
 
 
 /* Educational details */
-.timeline-container {
-  position: relative;
+
+/* Add border and styles to the <section> tag */
+section .timeline-container {
+  position:relative;
   width: 100%;
-  max-width: 1200px;
-  padding: 20px 0;
+  border: 2px solid #fff; /* Blue border */
+  border-radius: 10px; /* Rounded corners */
+  padding: 20px 0; /* Add padding inside the section */
+  margin: 0px 0; /* Add margin outside the section */
+  background-color: #edf9fa; /* Light background color */
+  box-shadow: 0 4px 8px rgba(105, 197, 225, 0.1); /* Subtle shadow */
+
 }
+
+/* Style the title inside the section */
+section.education .title span {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333; /* Dark text color */
+}
+
+.container {
+  max-width:max-content; /* Set a maximum width */
+}
+
+.row {
+  justify-content: center; /* Center the columns */
+}
+
 
 /* Vertical Timeline Line */
 .timeline-container::before {
@@ -654,7 +692,7 @@ footer .text span a:hover {
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   opacity: 0;
   transform: translateY(30px);
-  animation: fadeInUp 0.6s forwards ease-in-out;
+  animation: fadeInUp 0.8s forwards ease-in-out;
 }
 
 @keyframes fadeInUp {
@@ -764,15 +802,21 @@ footer .text span a:hover {
 
 .contact-item span {
   font-weight: bold;
+
 }
+
+.contact-item{
+  align-items: center;
+}
+
+.contact-item a, .contact-item span {
+  display: block;
+}
+
 
 .contact-item a {
   color: #89CFF0;
   text-decoration: none;
-}
-
-.contact-item a:hover {
-  text-decoration: underline;
 }
 
 .contact-form input, .contact-form textarea {
@@ -784,16 +828,19 @@ footer .text span a:hover {
 }
 
 
-section .icon i {
+.icon  {
     margin-bottom:-5px;
     margin: 0 auto;
     display: inline-block;
     align-items: center;
     justify-content: center;
     position: relative;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+.icon a {
+  font-size: 20px;
+  color: #000000;
 }
 
-section .timeline-container {
-    justify-content: center;
-    align-items:center;
-}
