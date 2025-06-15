@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaya Prakash - Portfolio</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+    const header = document.querySelector('.header');
+    let lastScroll = 0;
+
+    function checkScroll() {
+        const currentScroll = window.scrollY || window.pageYOffset;
+        
+        if (currentScroll > 10) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+        
+        lastScroll = currentScroll;
+    }
+
+    checkScroll();
+    let isScrolling;
+    window.addEventListener('scroll', function() {
+        window.clearTimeout(isScrolling);
+        isScrolling = setTimeout(checkScroll, 50);
+    }, false);
+});
+    </script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">Jaya Prakash</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+      <!-- Home Section Start -->
+  <section class="home" id="home">
+    <div class="home-content">
+      <div class="text">
+        <div class="text-one">Hello,</div>
+        <div class="text-two">I'm Jaya Prakash</div>
+        <div class="text-three">Full stack Developer</div>
+        <div class="text-four">From India</div>
+      </div>
+    </div>
+
+  </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">About Me</h2>
+            <div class="about-grid fade-in">
+                <div class="about-image">
+                    <img src="https://lh3.googleusercontent.com/a/ACg8ocLX_aUgBYPO_3jt4MncN_NLPXgIdMz7zS4F7HvLxNafTgqxnHXw=s192-c-rg-br100" alt="About Me" class="about-profile-img" />
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="stat-number">8.83</span>
+                            <div class="stat-label">Cgpa</div>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">15+</span>
+                            <div class="stat-label">Projects in python and powerBi</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>EEE Engineering Student</h3>
+                    <p>
+                        "Electrical & Electronics Engineering graduate (CGPA: 8.83) from <strong>Sree Vidyanikethan Engineering College</strong> with full-stack development expertise. Proficient in Python frameworks <strong>(Django, Flask)</strong> and libraries <strong>(NumPy, Pandas, Matplotlib)</strong> for data analysis and web solutions. Experienced in database management <strong>(MySQL)</strong> and data visualization <strong>(PowerBI)</strong>, combining my strong analytical engineering background with comprehensive software development capabilities."
+                    </p>
+                    <p>
+                        "Through my training and hands-on projects, I've developed full-stack web applications using <strong>Python</strong> with <strong>Django framework</strong>. I've implemented RESTful backends with <strong>Django ORM</strong>, designed database models, and created responsive frontend interfaces. I follow <strong>MVC architecture</strong> while developing scalable web solutions with Django's templating engine and security best practices."
+                    </p>
+                    <a href="https://drive.google.com/file/d/1ZQscCrAa6FblNYo3oWaGjUbTCZTS3sLG/view?usp=sharing" download="JayaPrakash_Resume.pdf">
+                        <button class="resume-btn">Resume</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category fade-in">
+                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">SQL</span>
+                    </div>
+                </div>
+
+                <div class="skill-category fade-in">
+                    <h3><i class="fas fa-laptop-code"></i>Data Science & Analytics</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Data Cleaning</span>
+                        <span class="skill-tag">Data Visualization</span>
+                        <span class="skill-tag">PowerBi</span>
+                    </div>
+                </div>
+
+                <div class="skill-category fade-in">
+                    <h3><i class="fas fa-tools"></i>Tools & Frameworks</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Jupyter Notebook</span>
+                        <span class="skill-tag">Google Colab</span>
+                        <span class="skill-tag">Pycharm</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                    </div>
+                </div>
+
+                <div class="skill-category fade-in">
+                    <h3><i class="fas fa-laptop-code"></i>Frontend</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Html</span>
+                        <span class="skill-tag">Css</span>
+                        <span class="skill-tag">JavaScript</span>
+                    </div>
+                </div>
+
+                <div class="skill-category fade-in">
+                    <h3><i class="fas fa-server"></i>Backend Development</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">Django</span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card fade-in">
+                    <div class="project-header">
+                        <h3 class="project-title">Sales Management</h3>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-description">
+                            This is a simple sales management and Musicplayer project built using the Django Framework, Python, HTML, CSS,
+                             MySQL Database, and JavaScript. <br>
+                             With this project, we can perform CRUD operations (CREATE, READ, UPDATE, and DELETE)</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">Django Framework</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/prkshnarayan/Djangomultiproject" class="project-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card fade-in">
+                    <div class="project-header">
+                        <h3 class="project-title">Personal Portfolio</h3>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-description">
+                            Full-stack projects built with Python, Django/Flask, MySQL, and data tools (Pandas, PowerBI) – from REST APIs to interactive dashboards.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Bootstrap</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/ramakrishnasankavaram/VidyaAI-Team-ARJUNA" class="project-link">
+                                <i class="fab fa-github"></i> Github
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card fade-in">
+                    <div class="project-header">
+                        <h3 class="project-title">Pizza Sales Analysis</h3>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-description">
+                            An interactive dashboard analyzing pizza sales for 2015!<br>
+                            🍕 This dashboard provides insights into top-selling pizza types, peak sales months, and customer preferences based on historical data.<br>
+                            July saw the highest sales overall and Weekends were the busiest for orders
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">PowerBi</span>
+                            <span class="tech-tag">Excel</span>
+                            <span class="tech-tag">DAX Functions</span>
+                            <span class="tech-tag">Power Query</span>
+                            <span class="tech-tag">SQL Server</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/prkshnarayan/Pizza_sales_report" class="project-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+        
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    
+    <section class="education" id="education" class="section">
+    <div class="container">
+      <h2 class="section-title fade-in">Education</h2>
+        <ul>
+            <li style="--accent-color:#75aacc">
+                <div class="date">2017 - 2018</div>
+                <div class="title">High School</div>
+                <div class="descr">
+                    <div class="education-item">
+                        <span>Institution:</span> Keshava Reddy E.M. High School
+                    </div>
+                    <div class="education-item">
+                        <span>Passed Year:</span> 2018
+                    </div>
+                    <div class="education-item">
+                        <span>Board:</span> BSEAP
+                    </div>
+                    <div class="education-item">
+                    <span>Location:</span> Tirupathi, AP
+                    </div>
+                    <div class="education-item">
+                    <span>Grade:</span> CGPA-10/10
+                </div>
+                </div>
+            </li>
+            <li style="--accent-color:#3289c1">
+                <div class="date">2018 - 2020</div>
+                <div class="title">Intermediate</div>
+                <div class="descr">
+                    <div class="education-item">
+                        <span>Institution:</span> Sri Chaitanya Junior College
+                    </div>
+                    <div class="education-item">
+                    <span>Subject:</span> Maths Physics Chemistry
+                    </div>
+
+                    <div class="education-item">
+                    <span>Board:</span> BSEAP
+                    </div>
+                    <div class="education-item">
+                        <span>Passed Year:</span> 2020
+                    </div>
+                    <div class="education-item">
+                    <span>Location:</span> Vijayawada, AP
+                    </div>
+                    <div class="education-item">
+                        <span>Grade:</span> CGPA-9.82/10 (94.4%)
+                    </div>
+                </div>
+            </li>
+            <li style="--accent-color:#166497">
+                <div class="date">2020 - 2024</div>
+                <div class="title">Bachelor's Degree</div>
+                <div class="descr">
+                    <div class="education-item">
+                        <span>Institution:</span> Sree Vidyanikethan Engineering College
+                    </div>
+                    <div class="education-item">
+                        <span>Graduation Year:</span> 2024
+                    </div>
+                    <div class="education-item">
+                        <span>Major:</span> Electrical and Electronics Engineering
+                    </div>
+                    <div class="education-item">
+                    <span>Location:</span> Tirupathi, AP
+                    </div>
+                    <div class="education-item">
+                    <span>Grade:</span> CGPA-8.83/10 (81%)
+                </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    </section>
+
+
+    <!-- Experience Section -->
+      <section class="experience" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Experience</h2>
+                <p class="section-subtitle">My professional journey and the experiences that have shaped my career</p>
+            </div>
+            
+            <div class="experience-grid">
+                <!-- Experience Card 1 -->
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <div class="company-logo" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));">
+                            Palle Tech
+                        </div>
+                        <div class="experience-info">
+                            <h3>Python Full Stack Internship</h3>
+                            <p class="company-name">Palle Technologies</p>
+                        </div>
+                    </div>
+                    <div class="experience-duration">Jun 2024 – Dec 2024</div>
+                    <div class="experience-duration">6 Months</div>
+                    <p class="experience-description">
+                        "Developed a full-stack web application using Django Framework that combines sales management 
+                        with music player functionality. Implemented secure CRUD operations (Create, Read, Update, Delete).<br>
+
+                        <strong>Key Features:</strong><br>
+                        ✓ Complete sales tracking system<br>
+                        ✓ Integrated music player management<br>
+                        ✓ Admin dashboard for content control<br>
+                        ✓ User authentication system<br>
+
+                        <strong>Technical Implementation:</strong><br>
+
+                        <strong>Backend:</strong> Django ORM, Python, MySQL Database<br>
+                        <strong>Frontend:</strong> HTML, CSS, JavaScript, Bootstrap<br>
+                        <strong>Security:</strong> Django authentication system<br>
+                        <strong>Architecture:</strong> MVC pattern implementation<br>
+                    </p>
+                    <!-- <div class="project-links">
+                            <a href="https://github.com/ramakrishnasankavaram/employee-burnout-prediction" class="project-link">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <a href="https://employee-burnout-prediction-qmmv.onrender.com/" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                    </div> -->
+                    <br>
+
+                    <div class="experience-skills">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">HTML & CSS</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">Django</span>
+                        <span class="skill-tag">Libraries (Numpy, Pandas, Matplotlib)</span>
+                    </div>
+                </div>
+
+
+                
+            </div>
+        </div>
+    </section>
+    
+        
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's discuss your next project or just say hello. I'm always open to new opportunities and interesting conversations.</p>
+                <br>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon" style="background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 8L10.89 13.26C11.2187 13.4793 11.6049 13.5963 12 13.5963C12.3951 13.5963 12.7813 13.4793 13.11 13.26L21 8M5 19H19C19.5304 19 20.0391 18.7893 20.4142 18.4142C20.7893 18.0391 21 17.5304 21 17V7C21 6.46957 20.7893 5.96086 20.4142 5.58579C20.0391 5.21071 19.5304 5 19 5H5C4.46957 5 3.96086 5.21071 3.58579 5.58579C3.21071 5.96086 3 6.46957 3 7V17C3 17.5304 3.21071 18.0391 3.58579 18.4142C3.96086 18.7893 4.46957 19 5 19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>jayaprakashbommisetty2580@gmail.com</p>
+                            <a href="mailto:ramakrishnasankavaram436.com" class="contact-link">Send a message</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon" style="background: linear-gradient(135deg, var(--accent-color), #f97316);">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22 16.92V19.92C22.0011 20.1985 21.9441 20.4742 21.8325 20.7293C21.7209 20.9845 21.5573 21.2136 21.3521 21.4019C21.1468 21.5901 20.9046 21.7335 20.6407 21.8227C20.3769 21.9119 20.0974 21.9451 19.82 21.92C16.7428 21.5856 13.787 20.5341 11.19 18.85C8.77382 17.3147 6.72533 15.2662 5.18999 12.85C3.49997 10.2412 2.44824 7.27099 2.11999 4.18C2.095 3.90347 2.12787 3.62476 2.21649 3.36162C2.30512 3.09849 2.44756 2.85669 2.63476 2.65162C2.82196 2.44655 3.0498 2.28271 3.30379 2.17052C3.55777 2.05833 3.83233 2.00026 4.10999 2H7.10999C7.59531 1.99522 8.06579 2.16708 8.43376 2.48353C8.80173 2.79999 9.04207 3.23945 9.10999 3.72C9.23662 4.68007 9.47144 5.62273 9.80999 6.53C9.94454 6.88792 9.97366 7.27691 9.8939 7.65088C9.81415 8.02485 9.62886 8.36811 9.35999 8.64L8.08999 9.91C9.51355 12.4135 11.5865 14.4864 14.09 15.91L15.36 14.64C15.6319 14.3711 15.9751 14.1858 16.3491 14.1061C16.7231 14.0263 17.1121 14.0555 17.47 14.19C18.3773 14.5286 19.3199 14.7634 20.28 14.89C20.7658 14.9585 21.2094 15.2032 21.5265 15.5775C21.8437 15.9518 22.0122 16.4296 22 16.92Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p>+91 8897704032</p>
+                            <a href="tel:+919014674704" class="contact-link">Give me a call</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+        // Add some interactive hover effects
+        document.querySelectorAll('.project-card, .skill-category').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-10px) scale(1.02)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+
+    </script>
+</body>
+</html>
