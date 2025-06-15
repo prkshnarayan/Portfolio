@@ -1,24 +1,45 @@
-Portfolio Website
-🌐 Live Demo: 
+<h1 align="left">🌟 Portfolio Website</h1>
+<p align="left">
+  <a href="https://prkshnarayan.github.io/Portfolio/" target="_blank">
+    <img src="https://img.shields.io/badge/🌐_Live_Demo-4285F4?style=for-the-badge&logo=google-chrome&logoColor=white" alt="Live Demo">
+  </a>
+</p>
 
-📌 Overview
-This repository contains my professional portfolio website, showcasing my skills, projects, and experience.
-Designed to highlight my capabilities, it serves as a central hub for employers, clients, and collaborators to explore my work.
+---
 
-✨ Features
-✔ Responsive Design – Works seamlessly on desktop, tablet, and mobile devices.
-✔ Project Showcase – Displays key projects with descriptions, screenshots, and tech stacks.
-✔ Skills Section – Lists technical proficiencies with visual indicators.
-✔ About Me – Professional background and personal introduction.
-✔ Contact Form/Links – Easy ways to connect via email, LinkedIn, or GitHub.
+## 📌 Overview
+<div align="left">
+  <p>This repository contains my professional portfolio website, showcasing my skills, projects, and experience. Designed to highlight my capabilities, it serves as a central hub for employers, clients, and collaborators to explore my work.</p>
+</div>
 
-#Technologies Used
+---
 
-✔ HTML5
-✔ CSS3 (with Flexbox/Grid)
-✔ JavaScript (optional, if used)k, Gulp]
+## ✨ Features
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+  <ul>
+    <li>📱 Responsive Design</li>
+    <li>🖥️ Project Showcase</li>
+    <li>⚡ Skills Section</li>
+    <li>👤 About Me</li>
+    <li>📬 Contact</li>
+  </ul>
+</div>
 
-#Setup Instructions
+---
 
-✔ Clone this repository: git clone [repository-url]
-✔ Open index.html in your browser
+## 🛠 Technologies Used
+<div align="left" style="margin-top: 20px;">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
+</div>
+
+---
+
+## 🚀 Setup Instructions
+```bash
+# Clone this repository
+git clone https://github.com/prkshnarayan/Portfolio.git
+
+# Open in browser
+open index.html
