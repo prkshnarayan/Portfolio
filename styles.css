@@ -66,6 +66,10 @@ body {
     height: 100%; /* Take full height */
 }
 
+.nav a{
+    text-decoration: none;
+}
+
 .nav-links {
     display: flex;
     list-style: none;
