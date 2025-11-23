@@ -1589,3 +1589,127 @@ ul li .descr::before {
         width: 100%;
     }
 }
+
+
+
+/* Footer */
+.footer {
+    background-color: #f2f9fc; /* Light blue background */
+    color: #0E2431; /* Dark text */
+    padding: 4rem 2rem;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    border-top: 2px solid #4070f4; /* subtle top border for separation */
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-left {
+    flex: 1 1 300px;
+}
+
+.footer-right {
+    flex: 1 1 300px;
+}
+
+
+/* Map styling */
+.map-wrapper {
+    width: 100%;
+    height: 250px;
+    border-radius: 12px; /* Rounded corners */
+    overflow: hidden; /* Ensures iframe respects radius */
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.map-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Hover effect */
+.map-wrapper:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Left column content */
+.footer-logo a {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #4070f4;
+    display: inline-block;
+    margin-bottom: 1rem;
+    text-decoration: none;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1.2rem;
+}
+
+.footer-links a {
+    color: #4070f4;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #f97316;
+    transform: translateY(-2px);
+}
+
+.footer-socials {
+    margin-bottom: 1.2rem;
+}
+
+.footer-socials a {
+    font-size: 1.5rem;
+    margin-right: 0.6rem;
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+    color: #0E2431;
+}
+
+.footer-socials a:hover {
+    transform: scale(1.2);
+    color: #4070f4;
+}
+
+.footer-bottom {
+    font-size: 0.9rem;
+    color: #0E2431;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-flex {
+        flex-direction: column;
+    }
+
+    .map-wrapper {
+        height: 200px;
+        margin-top: 1.5rem;
+    }
+
+    .footer-links {
+        justify-content: center;
+    }
+
+    .footer-socials {
+        justify-content: center;
+    }
+}
+
+
