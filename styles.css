@@ -112,11 +112,14 @@ body {
     width: 100%;
 }
 
-/* home section styling */
+/* home section styling 
+https://img.freepik.com/premium-photo/black-slate-texture-background-4k-uhd_464478-730.jpg?semt=ais_hybrid&w=740&q=80
+https://e0.pxfuel.com/wallpapers/627/591/desktop-wallpaper-better-start-of-a-future-technology-background-portfolio.jpg
+*/
 .home {
   height: 100vh;
   width: 100%;
-  background: url("https://img.freepik.com/premium-photo/black-slate-texture-background-4k-uhd_464478-730.jpg?semt=ais_hybrid&w=740&q=80") no-repeat;
+  background: url("https://e0.pxfuel.com/wallpapers/627/591/desktop-wallpaper-better-start-of-a-future-technology-background-portfolio.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -1711,6 +1714,7 @@ ul li .descr::before {
         justify-content: center;
     }
 }
+
 
 
 
