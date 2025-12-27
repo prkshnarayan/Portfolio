@@ -116,7 +116,7 @@ body {
 .home {
   height: 100vh;
   width: 100%;
-  background: url("https://wallpaperbat.com/img/268460-4k-animated-wallpaper.jpg") no-repeat;
+  background: url("https://img.freepik.com/premium-photo/black-slate-texture-background-4k-uhd_464478-730.jpg?semt=ais_hybrid&w=740&q=80") no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -1711,5 +1711,6 @@ ul li .descr::before {
         justify-content: center;
     }
 }
+
 
 
