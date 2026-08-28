@@ -35,11 +35,3 @@
 </div>
 
 ---
-
-## 🚀 Setup Instructions
-```bash
-# Clone this repository
-git clone https://github.com/prkshnarayan/Portfolio.git
-
-# Open in browser
-open index.html
